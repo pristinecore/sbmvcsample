@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Spring Boot and Thymeleaf - Hello World!</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/common.css" th:href="@{/css/common.css}" />
+</head>
+<body>
+<p data-th-attr="id=${'id-' + name}, class=${'name-' + name}, mydata1=${'newdata1-' + name}, mydata2=${'newdata2-' + name}" th:text="${'Hello ' + name + '!'}"></p>
+<p>greeting.html has been changed! No server restarted.</p>
+<img src="/images/home.png" />
+</body>
+</html>
