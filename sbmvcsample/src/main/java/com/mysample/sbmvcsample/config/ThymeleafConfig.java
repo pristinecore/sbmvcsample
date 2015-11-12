@@ -30,7 +30,7 @@ public class ThymeleafConfig {
 
     @Bean
     public ViewResolver viewResolver(){
-        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver() ;
+        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
         viewResolver.setTemplateEngine(templateEngine());
         viewResolver.setOrder(1);
         return viewResolver;
